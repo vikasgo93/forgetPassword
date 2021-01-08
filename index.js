@@ -101,4 +101,4 @@ app.post('/newPassword', ((req, res) => {
         res.send("Done, Updated the new password")
 }))
 
-app.listen( 8000 || process.env.PORT)
+app.listen( process.env.PORT || 8000 )
