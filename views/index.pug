@@ -1,0 +1,12 @@
+extends layout
+block content
+
+    .card.login-form
+        .card-body
+            h3.card-title.text-center Reset Your Password
+            .card-text
+                form(action = "/sendEmail", method = "POST")
+                    .form-group
+                        label(for='exampleInputEmail1') Enter your email address and we will send you a link to reset your password.
+                        input.form-control.form-control-sm(type='email' placeholder='Enter your email address', name='userID')
+                    button.btn.btn-primary.btn-block(type='submit') Send Reset Link
